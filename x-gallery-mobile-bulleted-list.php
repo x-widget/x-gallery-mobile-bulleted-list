@@ -33,7 +33,7 @@ $title = cut_str(db::result( $title_query ),20,"...");
     <?php for ($i=0; $i<count($list); $i++) {?>
         <li>
 			<img src='<?=x::url()?>/widget/<?=$widget_config['name']?>/img/bullet.png'/>			
-			<div class='content'><a href='<?=$list[$i]['href']?>'><?=cut_str(get_text(strip_tags($list[$i]['wr_subject'])),40,"...")?></a></div>            
+			<div class='content'><a href='<?=$list[$i]['url']?>'><?=cut_str(get_text(strip_tags($list[$i]['wr_subject'])),40,"...")?></a></div>            
         </li>
     <?php }  ?>
     <?php if (count($list) == 0) { //게시물이 없을 때  ?>
