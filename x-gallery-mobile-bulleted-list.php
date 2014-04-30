@@ -40,7 +40,7 @@ $title = cut_str(db::result( $title_query ),20,"...");
 		<? for ( $i=0; $i < 7; $i++ ) {?>
 			 <li>
 				<img src='<?=x::url()?>/widget/<?=$widget_config['name']?>/img/bullet.png'/>
-				<div class='content'><a href='<?=G5_BBS_URL?>/write.php?bo_table=<?=$bo_table?>'>글을 등록해 주세요</a></div>            
+				<div class='content'><a href='<?=G5_BBS_URL?>/write.php?bo_table=<?=$_bo_table?>'>글을 등록해 주세요</a></div>            
 			</li>
 		<? }?>
     <?php }  ?>
